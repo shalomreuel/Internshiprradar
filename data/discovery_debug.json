@@ -1,0 +1,17 @@
+{
+  "RemoteOK": {
+    "requests": 1,
+    "accepted": 3,
+    "errors": 0
+  },
+  "Remotive": {
+    "requests": 1,
+    "accepted": 3,
+    "errors": 0
+  },
+  "Arbeitnow": {
+    "requests": 3,
+    "accepted": 4,
+    "errors": 0
+  }
+}
