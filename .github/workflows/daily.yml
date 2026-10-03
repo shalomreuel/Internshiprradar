@@ -1,0 +1,30 @@
+name: Daily internship discovery
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "30 2 * * *"  # 08:00 IST (UTC)
+
+permissions:
+  contents: write
+
+jobs:
+  discover:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: pip install -r requirements.txt
+      - name: Scan jobs and referral signals
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python main.py
+      - name: Commit latest results
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/
+          git diff --cached --quiet || git commit -m "Update internship discovery results"
+          git push

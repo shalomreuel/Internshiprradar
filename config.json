@@ -1,0 +1,31 @@
+{
+  "keywords": [
+    "artificial intelligence", "machine learning", "deep learning", "generative ai", "genai",
+    "large language model", "llm", "computer vision", "multimodal", "nlp",
+    "natural language processing", "reinforcement learning", "robotics", "ai engineer",
+    "ml engineer", "machine learning engineer", "research engineer", "research scientist",
+    "applied scientist", "applied research"
+  ],
+  "role_terms": [
+    "intern", "internship", "trainee", "co-op", "coop", "apprentice", "student researcher",
+    "research assistant", "research intern", "summer intern", "undergraduate", "graduate intern",
+    "working student"
+  ],
+  "exclude_terms": [
+    "sales", "marketing", "human resources", "recruiter", "business development",
+    "account executive", "customer success", "copywriter", "legal counsel"
+  ],
+  "greenhouse_boards": [],
+  "lever_sites": [],
+  "ashby_boards": [],
+  "max_pages_arbeitnow": 3,
+  "max_results": 300,
+  "referral_targets": [
+    {"company": "Hugging Face", "github_org": "huggingface"},
+    {"company": "OpenAI", "github_org": "openai"},
+    {"company": "Anthropic", "github_org": "anthropics"},
+    {"company": "Google DeepMind", "github_org": "google-deepmind"},
+    {"company": "Stability AI", "github_org": "Stability-AI"},
+    {"company": "EleutherAI", "github_org": "EleutherAI"}
+  ]
+}
