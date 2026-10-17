@@ -1,4 +1,4 @@
-# AI internship opportunities — 2026-10-16
+# AI internship opportunities — 2026-10-17
 
 Found **0** matching listings.
 
